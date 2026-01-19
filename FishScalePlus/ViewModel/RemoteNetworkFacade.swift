@@ -25,7 +25,7 @@ final class RemoteNetworkFacade: NetworkFacade {
     }
     
     func resolveURL(attribution: [String: Any]) async throws -> String {
-        let endpoint = URL(string: "https://birrdheallth.com/config.php")!
+        let endpoint = URL(string: Config.end)!
         let payload = buildPayload(from: attribution)
         let request = try buildRequest(url: endpoint, payload: payload)
         
