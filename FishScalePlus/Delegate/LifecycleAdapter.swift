@@ -4,6 +4,8 @@ import FirebaseMessaging
 import AppTrackingTransparency
 import UserNotifications
 import Combine
+import AppsFlyerLib
+
 
 final class LifecycleAdapter: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
     
