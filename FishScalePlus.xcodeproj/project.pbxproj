@@ -6,14 +6,76 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8FEFD3522F1E590200ED4750 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FEFD3512F1E590200ED4750 /* FirebaseAuth */; };
+		8FEFD3542F1E590200ED4750 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8FEFD3532F1E590200ED4750 /* FirebaseDatabase */; };
+		8FEFD3562F1E590200ED4750 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8FEFD3552F1E590200ED4750 /* FirebaseMessaging */; };
+		8FEFD3592F1E591D00ED4750 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8FEFD3582F1E591D00ED4750 /* AppsFlyerLib */; };
+		8FEFD4572F1E83D000ED4750 /* NotificationServiceApplicationExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8FEFD4502F1E83D000ED4750 /* NotificationServiceApplicationExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FEFD45F2F1E83E000ED4750 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8FEFD45E2F1E83E000ED4750 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FEFD4552F1E83D000ED4750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC43A712F0C093F005983DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FEFD44F2F1E83D000ED4750;
+			remoteInfo = NotificationServiceApplicationExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FEFD45C2F1E83D000ED4750 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FEFD4572F1E83D000ED4750 /* NotificationServiceApplicationExt.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8FC43A792F0C093F005983DC /* FishScalePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishScalePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEFD4502F1E83D000ED4750 /* NotificationServiceApplicationExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceApplicationExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8FEFD3D12F1E791B00ED4750 /* Exceptions for "FishScalePlus" folder in "FishScalePlus" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FC43A782F0C093F005983DC /* FishScalePlus */;
+		};
+		8FEFD45B2F1E83D000ED4750 /* Exceptions for "NotificationServiceApplicationExt" folder in "NotificationServiceApplicationExt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FEFD44F2F1E83D000ED4750 /* NotificationServiceApplicationExt */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8FC43A7B2F0C093F005983DC /* FishScalePlus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FEFD3D12F1E791B00ED4750 /* Exceptions for "FishScalePlus" folder in "FishScalePlus" target */,
+			);
 			path = FishScalePlus;
+			sourceTree = "<group>";
+		};
+		8FEFD4512F1E83D000ED4750 /* NotificationServiceApplicationExt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FEFD45B2F1E83D000ED4750 /* Exceptions for "NotificationServiceApplicationExt" folder in "NotificationServiceApplicationExt" target */,
+			);
+			path = NotificationServiceApplicationExt;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +85,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FEFD3562F1E590200ED4750 /* FirebaseMessaging in Frameworks */,
+				8FEFD3592F1E591D00ED4750 /* AppsFlyerLib in Frameworks */,
+				8FEFD3542F1E590200ED4750 /* FirebaseDatabase in Frameworks */,
+				8FEFD3522F1E590200ED4750 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEFD44D2F1E83D000ED4750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEFD45F2F1E83E000ED4750 /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				8FC43A7B2F0C093F005983DC /* FishScalePlus */,
+				8FEFD4512F1E83D000ED4750 /* NotificationServiceApplicationExt */,
+				8FEFD45D2F1E83E000ED4750 /* Frameworks */,
 				8FC43A7A2F0C093F005983DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +117,16 @@
 			isa = PBXGroup;
 			children = (
 				8FC43A792F0C093F005983DC /* FishScalePlus.app */,
+				8FEFD4502F1E83D000ED4750 /* NotificationServiceApplicationExt.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8FEFD45D2F1E83E000ED4750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,20 +139,49 @@
 				8FC43A752F0C093F005983DC /* Sources */,
 				8FC43A762F0C093F005983DC /* Frameworks */,
 				8FC43A772F0C093F005983DC /* Resources */,
+				8FEFD45C2F1E83D000ED4750 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8FEFD4562F1E83D000ED4750 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8FC43A7B2F0C093F005983DC /* FishScalePlus */,
 			);
 			name = FishScalePlus;
 			packageProductDependencies = (
+				8FEFD3512F1E590200ED4750 /* FirebaseAuth */,
+				8FEFD3532F1E590200ED4750 /* FirebaseDatabase */,
+				8FEFD3552F1E590200ED4750 /* FirebaseMessaging */,
+				8FEFD3582F1E591D00ED4750 /* AppsFlyerLib */,
 			);
 			productName = FishScalePlus;
 			productReference = 8FC43A792F0C093F005983DC /* FishScalePlus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8FEFD44F2F1E83D000ED4750 /* NotificationServiceApplicationExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEFD4582F1E83D000ED4750 /* Build configuration list for PBXNativeTarget "NotificationServiceApplicationExt" */;
+			buildPhases = (
+				8FEFD44C2F1E83D000ED4750 /* Sources */,
+				8FEFD44D2F1E83D000ED4750 /* Frameworks */,
+				8FEFD44E2F1E83D000ED4750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8FEFD4512F1E83D000ED4750 /* NotificationServiceApplicationExt */,
+			);
+			name = NotificationServiceApplicationExt;
+			packageProductDependencies = (
+				8FEFD45E2F1E83E000ED4750 /* FirebaseMessaging */,
+			);
+			productName = NotificationServiceApplicationExt;
+			productReference = 8FEFD4502F1E83D000ED4750 /* NotificationServiceApplicationExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +196,9 @@
 					8FC43A782F0C093F005983DC = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					8FEFD44F2F1E83D000ED4750 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 8FC43A742F0C093F005983DC /* Build configuration list for PBXProject "FishScalePlus" */;
@@ -94,18 +210,30 @@
 			);
 			mainGroup = 8FC43A702F0C093F005983DC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8FEFD3502F1E590200ED4750 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8FEFD3572F1E591D00ED4750 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FC43A7A2F0C093F005983DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8FC43A782F0C093F005983DC /* FishScalePlus */,
+				8FEFD44F2F1E83D000ED4750 /* NotificationServiceApplicationExt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8FC43A772F0C093F005983DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEFD44E2F1E83D000ED4750 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +250,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FEFD44C2F1E83D000ED4750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FEFD4562F1E83D000ED4750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FEFD44F2F1E83D000ED4750 /* NotificationServiceApplicationExt */;
+			targetProxy = 8FEFD4552F1E83D000ED4750 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8FC43A832F0C0940005983DC /* Debug */ = {
@@ -249,8 +392,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FishScalePlus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Smart Scale Plus";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use in application";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Smart Scale Plus may access limited device-level information to support measurement features, maintain app performance, and improve reliability. This information is used solely for internal analysis and feature refinement. We do not use this data for cross-app tracking, user profiling, or third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -265,7 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saclingappplus.FishScalePlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -289,8 +435,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FishScalePlus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Smart Scale Plus";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use in application";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Smart Scale Plus may access limited device-level information to support measurement features, maintain app performance, and improve reliability. This information is used solely for internal analysis and feature refinement. We do not use this data for cross-app tracking, user profiling, or third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -305,7 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saclingappplus.FishScalePlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -316,6 +465,67 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		8FEFD4592F1E83D000ED4750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceApplicationExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceApplicationExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saclingappplus.FishScalePlus.NotificationServiceApplicationExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8FEFD45A2F1E83D000ED4750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceApplicationExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceApplicationExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saclingappplus.FishScalePlus.NotificationServiceApplicationExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -340,7 +550,63 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8FEFD4582F1E83D000ED4750 /* Build configuration list for PBXNativeTarget "NotificationServiceApplicationExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEFD4592F1E83D000ED4750 /* Debug */,
+				8FEFD45A2F1E83D000ED4750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FEFD3502F1E590200ED4750 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		8FEFD3572F1E591D00ED4750 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FEFD3512F1E590200ED4750 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FEFD3502F1E590200ED4750 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8FEFD3532F1E590200ED4750 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FEFD3502F1E590200ED4750 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8FEFD3552F1E590200ED4750 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FEFD3502F1E590200ED4750 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8FEFD3582F1E591D00ED4750 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FEFD3572F1E591D00ED4750 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8FEFD45E2F1E83E000ED4750 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FEFD3502F1E590200ED4750 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FC43A712F0C093F005983DC /* Project object */;
 }
