@@ -110,8 +110,13 @@ final class StateEngine: ObservableObject {
             trigger(.checkPassed)
         } else {
             trigger(.checkFailed)
+            throw ValidationError.denie(message: "Denie")
         }
     }
+}
+
+enum ValidationError: Error {
+    case denie(message: String)
 }
 
 // MARK: - State Extensions

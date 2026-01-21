@@ -9,38 +9,42 @@ struct MainTabView: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            // Tab content
-            TabView(selection: $selectedTab) {
-                LogView()
-                    .tag(0)
-                    .environmentObject(catchManager)
-                
-                CalendarView()
-                    .tag(1)
-                    .environmentObject(catchManager)
-                
-                FishSpeciesView()
-                    .tag(2)
-                    .environmentObject(catchManager)
-                
-                StatsView()
-                    .tag(3)
-                    .environmentObject(catchManager)
-                
-                SettingsView()
-                    .tag(4)
-                    .environmentObject(authManager)
-                    .environmentObject(catchManager)
-            }
-            .tabViewStyle(.page(indexDisplayMode: .never))
             
-            // Custom tab bar
-            CustomTabBar(
-                selectedTab: $selectedTab,
-                showAddCatch: $showAddCatch
-            )
-            .offset(y: tabBarOffset)
-            .animation(.spring(response: 0.5, dampingFraction: 0.8), value: tabBarOffset)
+            VStack(spacing: 0) {
+                // Tab content
+                TabView(selection: $selectedTab) {
+                    LogView()
+                        .tag(0)
+                        .environmentObject(catchManager)
+                    
+                    CalendarView()
+                        .tag(1)
+                        .environmentObject(catchManager)
+                    
+                    FishSpeciesView()
+                        .tag(2)
+                        .environmentObject(catchManager)
+                    
+                    StatsView()
+                        .tag(3)
+                        .environmentObject(catchManager)
+                    
+                    SettingsView()
+                        .tag(4)
+                        .environmentObject(authManager)
+                        .environmentObject(catchManager)
+                }
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                
+                // Custom tab bar
+                CustomTabBar(
+                    selectedTab: $selectedTab,
+                    showAddCatch: $showAddCatch
+                )
+                .offset(y: tabBarOffset)
+                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: tabBarOffset)
+            }
+            
         }
         .sheet(isPresented: $showAddCatch) {
             AddCatchView(isPresented: $showAddCatch)
