@@ -191,6 +191,7 @@ struct SettingsView: View {
                 PrivacyPolicyView()
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

@@ -99,6 +99,7 @@ struct CalendarView: View {
             .navigationTitle("Calendar")
             .navigationBarTitleDisplayMode(.large)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     private var catchesForCurrentMonth: [FishCatch] {

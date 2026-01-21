@@ -36,6 +36,7 @@ struct FishSpeciesView: View {
                     .environmentObject(catchManager)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

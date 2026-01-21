@@ -101,6 +101,7 @@ struct StatsView: View {
             .navigationTitle("Statistics")
             .navigationBarTitleDisplayMode(.large)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
